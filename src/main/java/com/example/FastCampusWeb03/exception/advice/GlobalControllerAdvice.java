@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice//basePackages로 해당 패키지를 지정할수 있다.
 //@ControllerAdvice //View Resolver 기준 사용
 public class GlobalControllerAdvice {
+
     //우선 순위 3
     @ExceptionHandler(value = Exception.class)//전체적인 에러를 다잡는다
     public ResponseEntity exception(Exception e){
